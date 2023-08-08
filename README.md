@@ -37,3 +37,4 @@ You are ready =)
 Current remotes:
 e/n/d/r/c/s/q> q
 
+chmod u+x rclone.sh

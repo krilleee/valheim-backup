@@ -38,3 +38,29 @@ Current remotes:
 e/n/d/r/c/s/q> q
 
 chmod u+x rclone.sh
+
+crontab -e
+
+Chose preferd editor
+
+Edit when you want the script to run:
+
+*   *   *   *   *  sh /path/to/script/script.sh
+|   |   |   |   |              |
+|   |   |   |   |      Command or Script to Execute        
+|   |   |   |   |
+|   |   |   |   |
+|   |   |   |   |
+|   |   |   | Day of the Week(0-6)
+|   |   |   |
+|   |   | Month of the Year(1-12)
+|   |   |
+|   | Day of the Month(1-31)  
+|   |
+| Hour(0-23)  
+|
+Min(0-59)
+
+For exampe i want to run it every night at 02:30:
+
+30 2 * * * /home/krille/valheim-backup/rclone.sh
